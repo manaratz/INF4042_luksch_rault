@@ -1,4 +1,5 @@
-﻿using System;
+﻿using INF4042.Views;
+using System;
 
 using Xamarin.Forms;
 
@@ -32,7 +33,7 @@ namespace INF4042
 
         async void UpdateItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UpdateItemPage());
+            await Navigation.PushAsync(new UpdateItemPage(viewModel));
         }
 
         async void RemoveItem_Clicked(object sender, EventArgs e)
