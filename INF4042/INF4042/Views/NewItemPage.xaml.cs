@@ -15,8 +15,8 @@ namespace INF4042
 
             Item = new Item
             {
-                Text = "Item name",
-                Description = "This is an item description."
+                Text = "Item",
+                Description = "description."
             };
 
             BindingContext = this;

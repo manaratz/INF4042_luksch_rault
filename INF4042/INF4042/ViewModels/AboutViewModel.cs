@@ -11,9 +11,14 @@ namespace INF4042
         {
             Title = "About";
 
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+            EmailFred = new Command(() => Device.OpenUri(new Uri("mailto:luksch@et.esiea.fr")));
+            EmailVal = new Command(() => Device.OpenUri(new Uri("mailto:luksch@et.esiea.fr")));
+
+
         }
 
-        public ICommand OpenWebCommand { get; }
+        public ICommand EmailFred { get; }
+        public ICommand EmailVal { get; }
+
     }
 }

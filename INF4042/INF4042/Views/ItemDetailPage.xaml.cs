@@ -16,8 +16,8 @@ namespace INF4042
 
             var item = new Item
             {
-                Text = "Item 1",
-                Description = "This is an item description."
+                Text = "Item",
+                Description = "description"
             };
 
             viewModel = new ItemDetailViewModel(item);

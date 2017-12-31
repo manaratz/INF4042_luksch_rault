@@ -25,40 +25,25 @@
 					<Label.FormattedText>
 						<FormattedString>
 							<FormattedString.Spans>
-								<Span Text="AppName" FontAttributes="Bold" FontSize="22" />
+								<Span Text="INF4042" FontAttributes="Bold" FontSize="22" />
 								<Span Text=" " />
 								<Span Text="1.0" ForegroundColor="{StaticResource LightTextColor}" />
 							</FormattedString.Spans>
 						</FormattedString>
 					</Label.FormattedText>
 				</Label>
-				<Label>
-					<Label.FormattedText>
-						<FormattedString>
-							<FormattedString.Spans>
-								<Span Text="This app is written in C# and native APIs using the" />
-								<Span Text=" " />
-								<Span Text="Xamarin Platform" FontAttributes="Bold" />
-								<Span Text="." />
-							</FormattedString.Spans>
-						</FormattedString>
-					</Label.FormattedText>
-				</Label>
-				<Label>
-					<Label.FormattedText>
-						<FormattedString>
-							<FormattedString.Spans>
-								<Span Text="It shares code with its" />
-								<Span Text=" " />
-								<Span Text="iOS, Android, and Windows" FontAttributes="Bold" />
-								<Span Text=" " />
-								<Span Text="versions." />
-							</FormattedString.Spans>
-						</FormattedString>
-					</Label.FormattedText>
-				</Label>
-				<Button Margin="0,10,0,0" Text="Learn more" Command="{Binding OpenWebCommand}" BackgroundColor="{StaticResource Primary}" TextColor="White" />
-			</StackLayout>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="This is an application made for a student project by Frederick Luksch and Valentin Rault using Xamarin and C#. It meets the CRUD requirements. You can add/remove/update and read an item. If you need help or want to provide any feedback please contact us. " />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Margin="0,10,0,0" Text="Email to Frederick Luksch" Command="{Binding EmailFred}" BackgroundColor="{StaticResource Primary}" TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Email to Valentin Rault" Command="{Binding EmailVal}" BackgroundColor="{StaticResource Primary}" TextColor="White" />
+            </StackLayout>
 		</ScrollView>
 	</Grid>
 </ContentPage>
